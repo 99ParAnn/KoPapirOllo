@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/rock"
+            android:id="@+id/imagePlayerChoice"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A te választásod"
+            android:textAlignment="center"
+            android:textSize="50sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/rock"
+            android:id="@+id/imageRobotChoice">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A gép válsztása"
+            android:textAlignment="center"
+            android:textSize="50sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eredmény: Ember: 0 Computer: 0"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/textViewResult">
+
+        >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation = "horizontal">
+            <Button
+                android:layout_width="125sp"
+                android:layout_height="wrap_content"
+                android:text="Kő"
+                android:textSize="30sp"
+                android:id="@+id/buttonRock">
+                >
+            </Button>
+
+            <Button
+                android:layout_width="125sp"
+                android:layout_height="wrap_content"
+                android:text="Papír"
+                android:textSize="30sp"
+                android:id="@+id/buttonPaper">
+            >
+            </Button>
+
+            <Button
+                android:layout_width="125sp"
+                android:layout_height="wrap_content"
+                android:text="Olló"
+                android:textSize="30sp"
+                android:id="@+id/buttonScissors">
+            >
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
